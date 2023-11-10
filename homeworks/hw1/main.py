@@ -16,11 +16,11 @@ if __name__ == '__main__':
 
     # получаем зависимость с помощью МНК
     lsm_description = get_lsm_description(abscissa, ordinates)
-    lines = get_lsm_lines(abscissa,ordinates,)
+    lines = get_lsm_lines(abscissa, ordinates,)
 
     # визуализируем результаты
     with switch_to_ggplot():
         visualize_lines(lines)
 
     # сохраняем отчет в текстовый файл
-    get_report(lsm_description, 'report.txt')
+    print(get_report(lsm_description, 'report.txt'))
